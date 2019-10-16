@@ -21,3 +21,19 @@ Here are the steps I followed:
 >  ./helm init --service-account default --tiller-image gcr.io/kubernetes-helm/tiller:v2.15.0-rc.1
 >  kubectl -n kube-system get pods
 ```
+## Intermittent issues:  
+```
+pec.containers{tiller} readiness probe failed: Get http://172.17.0.6:44135/readiness: dial tcp 172.17.0.6:44135: connect: connection refused
+```
+To see the log:  
+```
+kubectl logs --namespace kube-system tiller-deploy-557875fd46-dtsdh
+```
+```
+helm version
+```
+Should show both the clinet and server (tiller) running and therefore  
+```
+helm list
+```
+Should return 
