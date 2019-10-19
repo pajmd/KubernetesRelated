@@ -29,3 +29,7 @@ $ >minikube ssh
 ```
 
 The obvious problem with this solution is when I delete the minikube VM I will have to copy the cert again.  
+One way of preventing tis annoyance would be to mount this folder to minikube:  
+```
+minikube mount          Mounts the specified directory into minikube
+```
