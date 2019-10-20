@@ -1,4 +1,9 @@
-# Installing helm
+# helm
+
+## Docs
+https://helm.sh/docs/developing_charts/
+
+## Installing helm client and tiller server
 
 After installing helm with snap I got the following error when trying to initialize it:  
 ```
