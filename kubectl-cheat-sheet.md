@@ -18,7 +18,7 @@ kubectl get pods (services) ... -o yaml
 ```
 k describe service my-service
 ```
-* get the log of the created thing
+* get the log of a pod
 ```
 k logs -f my-pod
 ```
