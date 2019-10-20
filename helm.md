@@ -45,12 +45,17 @@ Should return
 
 ## useful commands
 
-To add the Incubator repository/charts to a local client, run helm repo add:
+* To add the Incubator repository/charts to a local client, run helm repo add:
 ```
 $ helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/
 "incubator" has been added to your repositories
 ```
-To search the incubator repo:
+* To search the incubator repo:
 ```
 helm search incubator
+```
+* To update dependencies defined in requirements.yaml
+```
+cd folder_where_requiremens.yaml_is
+helm dep up .
 ```
