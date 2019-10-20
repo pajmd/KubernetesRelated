@@ -22,3 +22,11 @@ k describe service my-service
 ```
 k logs -f my-pod
 ```
+* delete a resource, ex a pod
+```
+k delete pod my-pod
+```
+or more deneric, all resources associated to a yaml
+```
+k delete -f mypod.yaml
+```
