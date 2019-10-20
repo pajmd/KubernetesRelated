@@ -37,3 +37,15 @@ Should show both the clinet and server (tiller) running and therefore
 helm list
 ```
 Should return 
+
+## useful commands
+
+To add the Incubator repository/charts to a local client, run helm repo add:
+```
+$ helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/
+"incubator" has been added to your repositories
+```
+To search the incubator repo:
+```
+helm search incubator
+```
