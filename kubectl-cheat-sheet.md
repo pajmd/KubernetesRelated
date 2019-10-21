@@ -30,7 +30,7 @@ or more deneric, all resources associated to a yaml
 ```
 k delete -f mypod.yaml
 ```
-* After opening the app ports listed in the deployment manifest, 
+* Port forwarding: After opening the app ports: ports section added to the deployment manifest, 
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -59,9 +59,13 @@ To see the ports
 ```
 kubectl describe deployment | grep Ports
 ```
-we can proceed to port forwarding from the host to a pod (debug only)
+we can proceed to port forwarding from the host to a pod (debug only, the proper way is to use a servie)
 ```
  kubectl port-forward $PODNAME 3000:3000
  ```
  kubectl will forward all connections on port 3000 on my local machine into the pod running in the cloud
  
+* Attaching a container running ik k8s (similar to docker exec command)
+```
+kubectl exec -it podname --container containername -- /bin/bash
+``
