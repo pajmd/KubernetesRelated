@@ -1,4 +1,5 @@
 # Kubectl Commands
+https://kubernetes.io/docs/reference/kubectl/cheatsheet
 
 alias k kubectl
 
