@@ -3,6 +3,9 @@
 ## Docs
 https://helm.sh/docs/developing_charts/
 
+## ApiVersion
+https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-apiversion-definition-guide.html
+
 ## Installing helm client and tiller server
 
 After installing helm with snap I got the following error when trying to initialize it:  
