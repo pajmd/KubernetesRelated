@@ -1,5 +1,6 @@
 # Kubectl Commands
-https://kubernetes.io/docs/reference/kubectl/cheatsheet
+* https://kubernetes.io/docs/reference/kubectl/cheatsheet
+* very good tuto: https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16
 
 alias k kubectl
 
@@ -60,7 +61,7 @@ To see the ports
 ```
 kubectl describe deployment | grep Ports
 ```
-we can proceed to port forwarding from the host to a pod (debug only, the proper way is to use a servie)
+we can proceed to port forwarding from the host to a pod (debug only, the proper way is to use a service)
 ```
  kubectl port-forward $PODNAME 3000:3000
  ```
