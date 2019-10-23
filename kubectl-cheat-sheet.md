@@ -32,6 +32,10 @@ or more deneric, all resources associated to a yaml
 ```
 k delete -f mypod.yaml
 ```
+* delete many resources associated to a label
+```
+k delete configmaps,StatefulSets,PodDisruptionBudget,services,pods -l label_key=label_value
+```
 * Port forwarding: After opening the app ports: ports section added to the deployment manifest, 
 ```
 apiVersion: extensions/v1beta1
