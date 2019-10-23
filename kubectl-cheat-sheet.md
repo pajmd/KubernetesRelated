@@ -78,4 +78,5 @@ we can proceed to port forwarding from the host to a pod (debug only, the proper
 * Attaching a container running ik k8s (similar to docker exec command)
 ```
 kubectl exec -it podname --container containername -- /bin/bash
+kubectl exec zk-0 -- /opt/zookeeper/bin/zkCli.sh create /hello world
 ``
