@@ -20,7 +20,11 @@ kubectl get pods (services) ... -o yaml
 ```
 k describe service my-service
 ```
-* get the log of a pod
+* to get all resources by namespace. ex for namespace default 
+```
+k get all -n default
+```
+* log of a pod (-f for tailing)
 ```
 k logs -f my-pod
 ```
