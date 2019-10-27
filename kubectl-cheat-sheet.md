@@ -28,6 +28,10 @@ k get all -n default
 ```
 k logs -f my-pod
 ```
+* log from a container within a POD
+```
+kubectl logs <pod-name> -c <init-container-2>
+```
 * delete a resource, ex a pod
 ```
 k delete pod my-pod
