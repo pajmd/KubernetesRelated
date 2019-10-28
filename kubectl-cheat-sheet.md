@@ -92,4 +92,6 @@ kubectl exec zk-0 -- /opt/zookeeper/bin/zkCli.sh create /hello world
 ### Voloumes
 see https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-volumes-example-nfs-persistent-volume.html
 
+### Multic container pods
+https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/
 
