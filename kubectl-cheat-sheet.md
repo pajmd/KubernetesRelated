@@ -1,4 +1,6 @@
-# Kubectl Commands
+# Kubernetes
+
+## Kubectl Commands
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet
 * very good tuto: https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16
 
@@ -83,4 +85,11 @@ we can proceed to port forwarding from the host to a pod (debug only, the proper
 ```
 kubectl exec -it podname --container containername -- /bin/bash
 kubectl exec zk-0 -- /opt/zookeeper/bin/zkCli.sh create /hello world
-``
+```
+
+## Kubernetes features
+
+### Voloumes
+see https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-volumes-example-nfs-persistent-volume.html
+
+
