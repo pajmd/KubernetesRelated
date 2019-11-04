@@ -86,12 +86,16 @@ we can proceed to port forwarding from the host to a pod (debug only, the proper
 kubectl exec -it podname --container containername -- /bin/bash
 kubectl exec zk-0 -- /opt/zookeeper/bin/zkCli.sh create /hello world
 ```
+* Running a image, ex: one which contains netools
+```
+k run netshell -it --rm --image tutum/dnsutils -- sh
+```
 
 ## Kubernetes features
 
-### Voloumes
+### Volumes
 see https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-volumes-example-nfs-persistent-volume.html
 
-### Multic container pods
+### Multi container pods
 https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/
 
