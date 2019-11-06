@@ -117,5 +117,17 @@ to list all contexts:
 ```
 kubectl config get-contexts
 ```
+## Gainning acces to a NodePort service running on GCP
+https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps
+
+* find the external IPs of the nodes:
+```
+k get node --output wide
+```
+* create a firewall rule to allow access
+```
+gcloud compute firewall-rules create test-node-port --allow tcp:30284
+Nodeport bein 30284
+```
 
 
