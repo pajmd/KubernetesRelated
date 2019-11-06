@@ -99,3 +99,16 @@ see https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-volum
 ### Multi container pods
 https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/
 
+
+## GCloud Platform
+
+### Switching context minikube / GCP
+```
+kubectl config use-context CONTEXT_NAME
+```
+to list all contexts:
+```
+kubectl config get-contexts
+```
+
+
