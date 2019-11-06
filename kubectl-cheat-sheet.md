@@ -90,6 +90,11 @@ kubectl exec zk-0 -- /opt/zookeeper/bin/zkCli.sh create /hello world
 ```
 k run netshell -it --rm --image tutum/dnsutils -- sh
 ```
+to resume
+```
+kubectl attach netshell-c46ff599-bqxdm -c netshell -i -t' command when the pod is running
+```
+
 
 ## Kubernetes features
 
