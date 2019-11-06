@@ -130,4 +130,6 @@ gcloud compute firewall-rules create test-node-port --allow tcp:30284
 Nodeport bein 30284
 ```
 
+### Stop VM Instances
+https://cloud.google.com/compute/docs/instances/stop-start-instance
 
