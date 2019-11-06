@@ -100,7 +100,9 @@ see https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-volum
 https://www.mirantis.com/blog/multi-container-pods-and-container-communication-in-kubernetes/
 
 
+
 ## GCloud Platform
+https://cloud.google.com/kubernetes-engine/docs/quickstart?refresh=1
 
 ### Switching context minikube / GCP
 ```
