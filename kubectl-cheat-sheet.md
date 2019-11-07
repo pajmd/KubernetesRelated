@@ -132,4 +132,7 @@ Nodeport bein 30284
 
 ### Stop VM Instances
 https://cloud.google.com/compute/docs/instances/stop-start-instance
+TDL;DR
+From the main menu,go to Compute Engine, in Instance Groups, remove the VMs from the Group, tehn go to VM instances and stop the VMs.
+
 
