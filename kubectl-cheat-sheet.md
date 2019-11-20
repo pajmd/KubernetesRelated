@@ -94,7 +94,16 @@ to resume
 ```
 kubectl attach netshell-c46ff599-bqxdm -c netshell -i -t' command when the pod is running
 ```
+## Debugging
+Check service endpoints
+```
+k get endpoints zookeeper-headless-service
+```
+If there are no endpoints there must be a mismatch beteen the selector and the labels.
 
+See https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/#does-the-service-have-any-endpoints
+
+TL;DR: check spec.selector field of your Service actually selects for metadata.labels values on your Pods
 
 ## Kubernetes features
 
