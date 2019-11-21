@@ -126,7 +126,7 @@ to list all contexts:
 ```
 kubectl config get-contexts
 ```
-## Gainning acces to a NodePort service running on GCP
+### Gainning acces to a NodePort service running on GCP
 https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps
 
 * find the external IPs of the nodes:
@@ -144,4 +144,30 @@ https://cloud.google.com/compute/docs/instances/stop-start-instance
 TDL;DR
 From the main menu,go to Compute Engine, in Instance Groups, remove the VMs from the Group, tehn go to VM instances and stop the VMs.
 
+### HELM
+
+Tiller needs to be install on GKE.  
+To avoid the annoying issues I experimented when installing it on my machine minikube I installed it on GKE
+following the instructions I described in my HELM page (from my GOProject workspace ...)  
+See https://github.com/pajmd/KubernetesRelated/blob/master/helm.md
+
+#### Issue with helm commands
+
+running install or list ... return errors
+```
+helm install some_chart
+Error: no available release name found
+```
+```
+helm list
+Error: configmaps is forbidden: User "system:serviceaccount:kube-system:default" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+```
+
+Found a workaround at:
+https://stackoverflow.com/questions/43499971/helm-error-no-available-release-name-found
+
+TL;DR:
+```
+kubectl create clusterrolebinding permissive-binding --clusterrole=cluster-admin --user=admin --user=kubelet --group=system:serviceaccounts
+```
 
