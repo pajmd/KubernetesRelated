@@ -73,7 +73,7 @@ helm dep up .
 helm install <chartfolder/>
 ```
 * To uninstall i.e. delete a release
-``
+```
 helm delete <release name>
 ```
 * list what was released
