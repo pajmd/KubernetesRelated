@@ -1,5 +1,9 @@
 # helm
 
+__NOTE:__
+Helm newer version 3 as of 201911 may well be easier to install 
+
+
 ## Docs
 https://helm.sh/docs/developing_charts/
 
@@ -62,3 +66,22 @@ helm search incubator
 cd folder_where_requiremens.yaml_is
 helm dep up .
 ```
+
+* install a release
+```
+helm install <chartfolder/>
+```
+* To uninstall i.e. delete a release
+``
+helm delete <release name>
+```
+* list what was released
+```
+helm list [--deployed]
+```
+* list deleted releases
+```
+helm list --deleted
+```
+
+
