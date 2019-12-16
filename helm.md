@@ -1,7 +1,8 @@
 # helm
 
-__NOTE:__
-Helm newer version 3 as of 201911 may well be easier to install 
+__NOTE:__  
+Helm install procedure described below is about version 2.n.  
+The newer version 3 as of 201911 may well be easier to install because tiller running on the cluster is no longer. 
 
 
 ## Docs
